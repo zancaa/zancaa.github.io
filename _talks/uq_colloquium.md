@@ -2,7 +2,7 @@
 title: "Evaluating a pilot tutorial program for women, nonbinary, transgender and gender diverse students"
 collection: talks
 type: "Invited talk"
-date: February, 2026
+date: 26-02-2026
 location: "Maths Colloquium, University of Queensland"
 ---
 

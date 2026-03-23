@@ -10,4 +10,11 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+
 gem 'connection_pool', '2.5.0'
+
+gem "csv", "~> 3.3"
+
+gem "bigdecimal", "~> 4.0"
+
+gem "ffi", "~> 1.15"
