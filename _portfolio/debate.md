@@ -1,6 +1,6 @@
 ---
 title: "Australian Mathematical Society 2025 Debate"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "Australian Mathematical Society 2025 Debate<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
