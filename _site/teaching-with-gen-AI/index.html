@@ -282,7 +282,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Content developed with Copilot to teach introduce first-year science students to the concepts behind GenAI. (Copilot generated the basic structure and themes, I have tweaked structure in some places and modified examples – any activities that I invented without any assistance from GenAI are denoted by ‘(human generated)’.) This page contains:</p>
+        <p>Content developed via conversations with Copilot to teach introduce first-year science students to the concepts behind GenAI. (Copilot generated the basic structure and themes, I have tweaked structure in some places and modified examples. In-class activities draw on my expertise in tertiary education.) This page contains:</p>
 <ul>
   <li>The intended learning objectives for the content. The teaching activities designed to reach the intended learning objectives are described below.</li>
   <li>Two-hours of lecture content. Desgined to be delivered synchronously, but can be adjusted to be asynchronous (polls can be run asynchronously, for example).</li>
@@ -295,32 +295,129 @@
 <ul>
   <li>Explain what artificial intelligence is</li>
   <li>Describe the relationships and differences between artificial intelligence, machine learning, and GenAI</li>
+  <li>Explain how a machine learning algorithm works</li>
   <li>Understand the limitations, biases, ethical and environmental concerns regarding GenAI use</li>
 </ul>
 
 <h1 id="two-hour-lecture-content">Two-hour lecture content</h1>
-<h2 id="opening-activity-human-generated-15-ish-minutes">Opening activity (human generated, 15-ish minutes)</h2>
+<h2 id="opening-activity-7-ish-minutes">Opening activity (7-ish minutes)</h2>
 <ul>
-  <li>Poll asking students whether they have ever used GenAI. (Show of hands. Anticipating almost everyone to have used GenAI tools, even if they have not realised it. This activity is more to guage the engagement of the live audience, if it exists.)</li>
+  <li>Poll asking students whether they have heard of GenAI, then ever used GenAI. (Show of hands. Anticipating almost everyone to have heard of and used GenAI tools, even if they have not realised it. This activity is more to guage the engagement of the live audience, if it exists.)</li>
   <li>Anonymous online poll asking students how they <em>think</em> GenAI works. (Not too sure what to expect from this one! For an introductory class, this could vary. More for me to learn the knowledge base of those in the room.)</li>
   <li>Anonymous online poll asking students what prompt they would provide GenAI to tell them how GenAI works. (To start conversations around prompt engineering.)</li>
   <li>Use one of the student responses (if they exist) to ask Copilot how GenAI works. Spend some time here unpacking the answer, guaging student’s thoughts on the answer, e.g. using a ‘hands up’ poll asking students whether they <em>think</em> they understand how GenAI works after engaging with Copilot’s answer.</li>
 </ul>
 
-<h2 id="introducing-terms-human-generated-20-ish-minutes">Introducing terms (human generated, 20-ish minutes)</h2>
-<p>Don’t want to overload students with terms here. Introduce some of the most common. Show</p>
+<h2 id="introducing-terms-4-ish-minutes">Introducing terms (4-ish minutes)</h2>
+<p>Don’t want to overload students with terms here. An applied class activity will be to explore more specific terms in more detail. Introduce some of the most common.</p>
+
+<p>Will refer to the following diagram throughout the lecture: 
+<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence." />
+We will start by introducing Gen AI:</p>
 
 <ul>
-  <li>GenAI:</li>
-  <li>AI:</li>
+  <li>GenAI: ‘A category of artificial intelligence that can create new content such as text, images, videos and music.’ (Source: <a href="https://www.oecd.org/en/topics/sub-issues/generative-ai.html">Organisation for Economic Co-operation and Development</a>, a definition also used by the <a href="https://architecture.digital.gov.au/capability/generative-artificial-intelligence">Australian Government</a>. Question for the class: how do different sources define GenAI? Why may the wording be different?)</li>
 </ul>
 
-<p>Methods for AI:</p>
+<p>So what is the definition of artificial intelligence? (AI)</p>
 <ul>
-  <li>Machine learning</li>
+  <li>AI: ‘An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.’ (Source: <a href="https://oecd.ai/en/wonk/definition">Organisation for Economic Co-operation and Development</a>. Question for the class: do we ‘like’ this definition? What do and do we not like about it?)</li>
 </ul>
 
-<h1 id="two-hour-applied-class-content">Two-hour applied class content</h1>
+<h2 id="a-short-history-of-ai-8-ish-minutes">A short history of AI (8-ish minutes)</h2>
+<p>Okay, so how do these ‘machine-based systems’ work? Where have they come from?</p>
+<ul>
+  <li>These ideas pre-date ChatGPT and even the internet! People have been interested in using machines to automate tasks that humans can do for a long time.</li>
+  <li></li>
+</ul>
+
+<h2 id="machine-learning-introduction-3-ish-minutes">Machine learning introduction (3-ish minutes)</h2>
+<p>As we have seen above, AI is a broad term that can cover a range of ideas. A subset of AI is machine learning:</p>
+<ul>
+  <li>Machine learning: Machine learning (ML) is a field within artificial intelligence (AI) and computer science dedicated to using <em>data</em> and <em>algorithms</em> to help AI mimic human learning, thereby enhancing its precision over time. (Source: <a href="https://architecture.digital.gov.au/capability/machine-learning">Australian Government Architecture</a>)</li>
+</ul>
+
+<p>The type of data and algorithms used depends on the problem we are trying to solve! Let’s start with an example:</p>
+
+<h2 id="revision-and-terminology-activity-linear-regression-as-an-example-of-machine-learning-10-ish-minutes">Revision and terminology activity: linear regression as an example of machine learning (10-ish minutes)</h2>
+<p>Opening activity: ask students who has heard of linear regression (I suspect all of them, but again this provides an opportunity for me to guage engagement later in the lecture). Ask students who could explain linear regression to a high school student (to check their memory/confidence, which will guide how quickly I move through the revision activity).</p>
+
+<p>A lot of terms used in machine learning are similar to terms students will have met before, place these in context. Machine learning uses <em>data</em> to learn. There are certain terms that you may have met previously (e.g. when learning linear regression - will be treated with more thoroughly in a statistics setting) that have different names in the machine learning world. Opportunity to draw on other examples and content in the course that students connect with (e.g. examples from climate change, population dynamics, pharmacokinetics (the Lineweaver-Burk plot is a classic here), or epidemics).</p>
+<ul>
+  <li>Recall linear regression that you may have met before. Let \(Y\) be a random variable representing the outcome we are interested in (for the Lineweaver-Burk plot, this would be \(1/V\), where \(V\) is rate of change of product of a chemical reaction). The random variable \(Y\) is sometimes referred to as the ‘dependent’, ‘response’, ‘outcome’ or ‘target’ variable. We wish to determine the relationship between our response variable and a ‘predictor’ variable \(x\). The predictor variable is sometimes referred to as the ‘independent’, ‘explanatory’ variable or ‘covariate’.  \(y = m x + c\) (or \(y = a x + b\)).   In machine learning land, we have:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbols</th>
+      <th>Math words</th>
+      <th>Machine learning words</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(x\)</td>
+      <td>Independent variable</td>
+      <td>Feature</td>
+    </tr>
+    <tr>
+      <td>\(y\)</td>
+      <td>Dependent variable</td>
+      <td>Label</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <em>data</em> our machine learning algorithm <em>trains</em> on is an input, typically rows and columns. Each row of the dataset is referred to as an <em>example</em> and the columns are features and/or labels. In machine learning land, we are trying to identify relationships between features and labels.</p>
+
+<p>The <em>parameters</em> in our ‘old school’ linear regression model are \(m\), the slope of our regression line, and \(c\), the intercept. These also have corresponding names in maching learning land:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbols</th>
+      <th>Math words</th>
+      <th>Machine learning words</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(m\)</td>
+      <td>Slope</td>
+      <td>Weight</td>
+    </tr>
+    <tr>
+      <td>\(c\)</td>
+      <td>Intercept</td>
+      <td>Bias</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="logistic-regression-as-an-example-of-machine-learning-25-ish-minutes">Logistic regression as an example of machine learning (25-ish minutes)</h2>
+<p>Ask students for examples of yes/no questions. If there is a good example from the class use it, otherwise have a back up option of image recognition (e.g. using a blurred photo of Taylor Swift, or someone else from popular culture [does such a thing still exist?] - the `good’ thing about this example is that facial recognition is a technology that is being used, and this example allows students to reflect on the potential flaws and issues with the technology).</p>
+
+<h2 id="brain-break-5-minutes">Brain break (5 minutes)</h2>
+<p>For activities longer than one hour, I always allow a few minutes for breath for students (and myself!)</p>
+
+<p>Closing image for the introducing terms section: 
+<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence terms. Deep learning is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence." />
+We only covered artificial intelligence and machine learning in this lecture. The other terms, neural networks, deep learning, and large language models (LLMs) are options for you to explore in the activity class.</p>
+
+<h2 id="limitations-biases-ethics-and-cost">Limitations, biases, ethics and cost</h2>
+
+<!-- Making a start on
+Two-hour applied class content
+======
+Drawing on the content from the lecture, we wish to expand students' understanding of terms by giving them the tools to explore concrete examples. 
+
+## Activity 1
+In lectures, the terms generative artificial itnelligence, artificial intelligence and machine learning were introduced. The first activity for this activity class is to explore an artificial intelligence topic in more detail. Choose one of the terms below, or another term of your choice, to explore during the class:
+- Neural networks
+- Deep learning
+- LLMs
+-->
 
 
         
@@ -390,7 +487,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2026 Age Zanca, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-08-24
+  Site last updated 2026-08-26
 </div>
 
       </footer>
