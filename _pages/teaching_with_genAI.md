@@ -30,7 +30,8 @@ Two-hour lecture content
 Don't want to overload students with terms here. An applied class activity will be to explore more specific terms in more detail. Introduce some of the most common. 
 
 Will refer to the following diagram throughout the lecture: 
-![Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.](../images/ai_venn_diagram.png)
+<img src="../images/ai_venn_diagram.png" width="600" alt="Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.">
+
 We will start by introducing Gen AI:
 
 - GenAI: 'A category of artificial intelligence that can create new content such as text, images, videos and music.' (Source: [Organisation for Economic Co-operation and Development](https://www.oecd.org/en/topics/sub-issues/generative-ai.html), a definition also used by the [Australian Government](https://architecture.digital.gov.au/capability/generative-artificial-intelligence). Question for the class: how do different sources define GenAI? Why may the wording be different?) 
@@ -98,14 +99,19 @@ For activities longer than one hour, I always allow a few minutes for breath for
 
 ## From linear regression to neural networks (10-ish minutes)
 Visually, we can think of linear regression with one feature as:
-![Schematic of linear regression with input x and output y.](../images/lin_reg_1.png)
+
+<img src="../images/lin_reg_1.png" width="500" alt="Schematic of linear regression with input x and output y.">
 
 If we had multiple features:
-![Schematic of linear regression with multiple inputs x_1, x_2 and x_3 and output y.](../images/lin_reg_2.png)
+
+<img src="../images/lin_reg_2.png" width="500" alt="Schematic of linear regression with multiple inputs x_1, x_2 and x_3 and output y.">
+
 (Note: here the subscripts do not denote observations, but rather multiple inputs. Clashing with notation from earlier!)
 
 What if we performed linear regression twice, something like:
-![Schematic of linear regression with multiple inputs x_1, x_2 and x_3, a hidden layer with four components h_1, h_2, h_3, and h_4 and output y.](../images/nn_1.png)
+
+<img src="../images/nn_1.png" width="500" alt="Schematic of linear regression with multiple inputs x_1, x_2 and x_3, a hidden layer with four components h_1, h_2, h_3, and h_4 and output y.">
+
 With the three inputs being used in a linear model to generate \\(h_{1}\\), then a linear model with different weights and bias to produce \\(h_{2}\\) and different weights and bias again to \\(h_{3}\\) and \\(h_{4}\\). Then there is another linear model to produce \\(y\\) from \\(h_{1}\\), \\(h_{2}\\), \\(h_{3}\\) and \\(h_{4}\\). What would we gain from this? Not a lot in most cases! Here we have used linear *activation functions* between our layers, and linear combinations of linear functions are themselves linear. But what if we choose a different function? A common non-linear function is the sigmoid function:
 
 Using a non-linear function, and combinations of non-linear functions, allow us to explore a richer input -> output world, not restricted to linear relationships! 
@@ -148,7 +154,8 @@ Our intended learning objectives were:
 Can we do these yet? What needs further clarifying? You can (noting some of the costs above!) create your own Copilot Notebook to probe the limits of this content! 
 
 Closing image for the introducing terms section: 
-![Venn diagram of artificial intelligence terms. Deep learning is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.](../images/ai_venn_diagram.png)
+<img src="../images/ai_venn_diagram.png" width="600" alt="Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.">
+
 Within each of these concepts, there is so much more we have not yet covered! There will be an opportunity to explore these further in the applied class.
 
 <!-- Making a start on
