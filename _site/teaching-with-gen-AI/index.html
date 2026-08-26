@@ -174,7 +174,7 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/adriana_zanca.png" class="author__avatar" alt="Age Zanca"  fetchpriority="high" />
+    	<img src="http://localhost:4000/images/adriana_zanca.png" class="author__avatar" alt="Age Zanca" fetchpriority="high">
     
   </div>
 
@@ -189,10 +189,12 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       
-        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Australia</li>
+        <li class="author__desktop">
+<i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Australia</li>
       
       
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>The University of Melbourne</li>
+        <li class="author__desktop">
+<i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>The University of Melbourne</li>
       
       
       
@@ -203,7 +205,7 @@
       
             
       
-        <li><a href="https://scholar.google.com.au/citations?user=-7sk38YAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="https://scholar.google.com.au/citations?user=-7sk38YAAAAJ&amp;hl=en&amp;oi=ao"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
       
             
       
@@ -282,11 +284,12 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Content developed via conversations with Copilot to teach introduce first-year science students to the concepts behind GenAI. (Copilot generated the basic structure and themes, I have tweaked structure in some places and modified examples. In-class activities draw on my expertise in tertiary education.) This page contains:</p>
+        <p>Content developed via conversations with Copilot to teach introduce first-year science students to the concepts behind GenAI. (Copilot generated the basic structure and themes, I have tweaked structure in some places and modified examples. In-class activities draw on my expertise in tertiary education.) I am a visual learner and this content is missing slides (and has a lot of words!) – visuals pending <img class="emoji" title=":blush:" alt=":blush:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20"> This page contains:</p>
 <ul>
   <li>The intended learning objectives for the content. The teaching activities designed to reach the intended learning objectives are described below.</li>
-  <li>Two-hours of lecture content. Desgined to be delivered synchronously, but can be adjusted to be asynchronous (polls can be run asynchronously, for example).</li>
-  <li>Two-hours of applied class content. Including some python coding.</li>
+  <li>Two-hours of lecture content. Desgined to be delivered synchronously, but can be adjusted to be asynchronous (polls can be run asynchronously, for example).
+<!-- - Two-hours of applied class content. Including some python coding. -->
+</li>
 </ul>
 
 <p>For advanced students, more theory would be introduced (e.g. mathematical formulae). For statistics students, the focus would focus more heavily on data and training.</p>
@@ -295,24 +298,24 @@
 <ul>
   <li>Explain what artificial intelligence is</li>
   <li>Describe the relationships and differences between artificial intelligence, machine learning, and GenAI</li>
-  <li>Explain how a machine learning algorithm works</li>
+  <li>Identify features of machine learning algorithms</li>
   <li>Understand the limitations, biases, ethical and environmental concerns regarding GenAI use</li>
 </ul>
 
 <h1 id="two-hour-lecture-content">Two-hour lecture content</h1>
 <h2 id="opening-activity-7-ish-minutes">Opening activity (7-ish minutes)</h2>
 <ul>
-  <li>Poll asking students whether they have heard of GenAI, then ever used GenAI. (Show of hands. Anticipating almost everyone to have heard of and used GenAI tools, even if they have not realised it. This activity is more to guage the engagement of the live audience, if it exists.)</li>
+  <li>Poll asking students whether they have heard of GenAI, then ever used GenAI. (Show of hands. Anticipating almost everyone to have heard of and used GenAI tools, even if they have not realised it. This activity is more to gauge the engagement of the live audience, if it exists.)</li>
   <li>Anonymous online poll asking students how they <em>think</em> GenAI works. (Not too sure what to expect from this one! For an introductory class, this could vary. More for me to learn the knowledge base of those in the room.)</li>
   <li>Anonymous online poll asking students what prompt they would provide GenAI to tell them how GenAI works. (To start conversations around prompt engineering.)</li>
-  <li>Use one of the student responses (if they exist) to ask Copilot how GenAI works. Spend some time here unpacking the answer, guaging student’s thoughts on the answer, e.g. using a ‘hands up’ poll asking students whether they <em>think</em> they understand how GenAI works after engaging with Copilot’s answer.</li>
+  <li>Use one of the student responses (if they exist) to ask Copilot, ChatGPT and Claude how GenAI works. Spend some time here unpacking the answer, guaging students’ thoughts on the answer, e.g. using a ‘hands up’ poll asking students whether they <em>think</em> they understand how GenAI works after engaging with the different answers. Get them thinking about why they get different answers (and would get different answers from the same tool every time).</li>
 </ul>
 
 <h2 id="introducing-terms-4-ish-minutes">Introducing terms (4-ish minutes)</h2>
 <p>Don’t want to overload students with terms here. An applied class activity will be to explore more specific terms in more detail. Introduce some of the most common.</p>
 
 <p>Will refer to the following diagram throughout the lecture: 
-<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence." />
+<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence (AI) terms. Large language models (LLMs) is a subset of generative AI (GenAI), which is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.">
 We will start by introducing Gen AI:</p>
 
 <ul>
@@ -327,8 +330,13 @@ We will start by introducing Gen AI:</p>
 <h2 id="a-short-history-of-ai-8-ish-minutes">A short history of AI (8-ish minutes)</h2>
 <p>Okay, so how do these ‘machine-based systems’ work? Where have they come from?</p>
 <ul>
-  <li>These ideas pre-date ChatGPT and even the internet! People have been interested in using machines to automate tasks that humans can do for a long time.</li>
-  <li></li>
+  <li>These ideas pre-date ChatGPT and the internet and the modern era! People have been interested in using machines to automate tasks that humans can do for a long time.</li>
+  <li>BCE: <a href="https://news.stanford.edu/stories/2019/02/ancient-myths-reveal-early-fantasies-artificial-life">Ancient mythology approaches to AI</a>
+</li>
+  <li>The Turing test: can machines ‘think’?</li>
+  <li>Logic Theorist: computer program developed by Allen Newell, Herbert Simon, and Cliff Shaw to use symbolic logic to prove mathematical theorems. Why is this AI? It was programmed to mimic human reasoning. Why is it not GenAI? Because it used hard-coded (deterministic) rules to derive proofs.</li>
+  <li>ELIZA: a chatbot created in 1966 by Joseph Weizenbaum at MIT. Why is this AI? It was programmed to produce text simulating a psychotherapist. Why is it not GenAI? Because it uses pattern matching and substitutions to generate output text, it does not create ‘new’ content.</li>
+  <li>Who is missing from this picture?</li>
 </ul>
 
 <h2 id="machine-learning-introduction-3-ish-minutes">Machine learning introduction (3-ish minutes)</h2>
@@ -339,13 +347,19 @@ We will start by introducing Gen AI:</p>
 
 <p>The type of data and algorithms used depends on the problem we are trying to solve! Let’s start with an example:</p>
 
-<h2 id="revision-and-terminology-activity-linear-regression-as-an-example-of-machine-learning-10-ish-minutes">Revision and terminology activity: linear regression as an example of machine learning (10-ish minutes)</h2>
-<p>Opening activity: ask students who has heard of linear regression (I suspect all of them, but again this provides an opportunity for me to guage engagement later in the lecture). Ask students who could explain linear regression to a high school student (to check their memory/confidence, which will guide how quickly I move through the revision activity).</p>
+<h2 id="linear-regression-as-an-example-of-machine-learning-35-ish-minutes">Linear regression as an example of machine learning (35-ish minutes)</h2>
+<p>Opening activity: ask students who has heard of linear regression (I suspect all of them, but again this provides an opportunity for me to gauge engagement later in the lecture). Ask students who could explain linear regression to a high school student (to check their memory/confidence, which will guide how quickly I move through the revision activity).</p>
 
 <p>A lot of terms used in machine learning are similar to terms students will have met before, place these in context. Machine learning uses <em>data</em> to learn. There are certain terms that you may have met previously (e.g. when learning linear regression - will be treated with more thoroughly in a statistics setting) that have different names in the machine learning world. Opportunity to draw on other examples and content in the course that students connect with (e.g. examples from climate change, population dynamics, pharmacokinetics (the Lineweaver-Burk plot is a classic here), or epidemics).</p>
 <ul>
-  <li>Recall linear regression that you may have met before. Let \(Y\) be a random variable representing the outcome we are interested in (for the Lineweaver-Burk plot, this would be \(1/V\), where \(V\) is rate of change of product of a chemical reaction). The random variable \(Y\) is sometimes referred to as the ‘dependent’, ‘response’, ‘outcome’ or ‘target’ variable. We wish to determine the relationship between our response variable and a ‘predictor’ variable \(x\). The predictor variable is sometimes referred to as the ‘independent’, ‘explanatory’ variable or ‘covariate’.  \(y = m x + c\) (or \(y = a x + b\)).   In machine learning land, we have:</li>
+  <li>Recall linear regression that you may have met before. Let \(Y\) be a random variable representing the outcome we are interested in (for the Lineweaver-Burk plot, this would be \(1/V\), where \(V\) is rate of change of product of a chemical reaction). The random variable \(Y\) is sometimes referred to as the ‘dependent’, ‘response’, ‘outcome’ or ‘target’ variable. We wish to determine the relationship between our response variable and a ‘predictor’ variable \(x\) (for the Lineweaver-Burk plot, this would be \(1/[S]\), where \([S]\) is the substrate concentration of a chemical reaction). The predictor variable is sometimes referred to as the ‘independent’, ‘explanatory’ variable or ‘covariate’. (Before diving in to a linear model, we should perform an <a href="https://www.ibm.com/think/topics/exploratory-data-analysis">exploratory data analysis</a> to convince ourselves that a linear model may be an appropriate starting point for the relationship between \(Y\) and \(x\)). The linear statistical model relating \(Y\) and \(x\) is:</li>
 </ul>
+
+\[Y = \alpha + \beta x + \epsilon,\]
+
+<p>where \(\alpha\) and \(\beta\) are regression parameters representing the intercept and slope of the regression line, respectively. (You may have seen things of the form \(y = m x + c\) (or \(y = a x + b\)) in a past life, notation can vary between sources, this is something to look out for when using GenAi to study!) The \(\epsilon\) term is a(nother) random variable representing the error in the model, usually with distributed as \(\mathcal{N}(0,\sigma^2)\), where \(\sigma^2\) is the variance of error. In linear regression, we use \(n\in\mathbb{N}\) observations of our predictor variable \(x_{i}\) and outcome random variable, denoted \(y_{i}\), with \(i\in{1, \ldots, n}\) and least squares estimation to determine our regression parameters.</p>
+
+<p>In machine learning land, there also exists the concept of linear regression, but they use different terminology:</p>
 
 <table>
   <thead>
@@ -371,7 +385,7 @@ We will start by introducing Gen AI:</p>
 
 <p>The <em>data</em> our machine learning algorithm <em>trains</em> on is an input, typically rows and columns. Each row of the dataset is referred to as an <em>example</em> and the columns are features and/or labels. In machine learning land, we are trying to identify relationships between features and labels.</p>
 
-<p>The <em>parameters</em> in our ‘old school’ linear regression model are \(m\), the slope of our regression line, and \(c\), the intercept. These also have corresponding names in maching learning land:</p>
+<p>The <em>parameters</em> in our ‘old school’ linear regression model are \(\beta\), the slope of our regression line, and \(\alpha\), the intercept. These also have corresponding names in maching learning land:</p>
 
 <table>
   <thead>
@@ -383,29 +397,108 @@ We will start by introducing Gen AI:</p>
   </thead>
   <tbody>
     <tr>
-      <td>\(m\)</td>
+      <td>\(\beta\)</td>
       <td>Slope</td>
       <td>Weight</td>
     </tr>
     <tr>
-      <td>\(c\)</td>
+      <td>\(\alpha\)</td>
       <td>Intercept</td>
       <td>Bias</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="logistic-regression-as-an-example-of-machine-learning-25-ish-minutes">Logistic regression as an example of machine learning (25-ish minutes)</h2>
-<p>Ask students for examples of yes/no questions. If there is a good example from the class use it, otherwise have a back up option of image recognition (e.g. using a blurred photo of Taylor Swift, or someone else from popular culture [does such a thing still exist?] - the `good’ thing about this example is that facial recognition is a technology that is being used, and this example allows students to reflect on the potential flaws and issues with the technology).</p>
+<p>Here’s where things get more interesting. In the classic least squares regression we have met before, we systematically identify the values of \(\beta\) and \(\alpha\) that minimise the sum of squares of the residuals, where the residuals are the difference between the observed and predicted values. But we could define other functions to minimise over that are not sums of squares. (Some) machine learning algorithms also require a function to minimise the difference between predicted and observed values. These functions are referred to as <em>loss functions</em>. We are always seeking to minimise loss functions!</p>
+
+<p>When you have multiple <em>features</em> and large datasets, how do we find the corresponding parameter values that minimise our loss function? This is an <em>optimisation</em> question. (If you are interested in these sorts of questions, an Optimisation and Operations Research Major could be for you!) A common approach is known as <em>gradient descent</em>. Writing our loss function as a function of the weight, \(w\) and bias, \(b\), we have \((L(w, b))\), where the form of \(L\) depends on the loss function being used. From this, we can calculate the (partial) derivatives of \(L\) with respect to \(w\) and \(b\), in other words, \(\frac{\partial L}{\partial w}\) and \(\frac{\partial L}{\partial b}\). This optimisation algorithm uses multiple iterations. Suppose that at iteration \(j\in\mathbb{N}\) the weight and bias take values \(w_{j}\) and \(b_{j}\), then at iteration \(j+1\) under the gradient descent algorithm, the weight and bias will have values:</p>
+
+\[w_{j+1} = w_{j} - \gamma  \frac{\partial L}{\partial w} \Bigg\rvert_{(w, b) = (w_{j}, b_{j})}\]
+
+\[b_{j+1} = b_{j} - \gamma  \frac{\partial L}{\partial b} \Bigg\rvert_{(w, b) = (w_{j}, b_{j})},\]
+
+<p>where \(\gamma\) is a parameter determining the step size of the algorithm, often referred to as the <em>learning rate</em>. The algorithm continues iteratively until the loss function <em>converges</em> (this may not be convergence in the strict mathematical sense). What choices have we had to make so far? Loss functions and step sizes for our optimisation algorithm! What might the implications be for our predictions?</p>
+
+<!-- ## Logistic regression as an example of machine learning (25-ish minutes)
+Ask students for examples of yes/no questions. If there is a good example from the class use it, otherwise have a back up option of image recognition (e.g. using a blurred photo of Taylor Swift, or someone else from popular culture [does such a thing still exist?] - the `good' thing about this example is that facial recognition is a technology that is being used, and this example allows students to reflect on the potential flaws and issues with the technology). -->
 
 <h2 id="brain-break-5-minutes">Brain break (5 minutes)</h2>
 <p>For activities longer than one hour, I always allow a few minutes for breath for students (and myself!)</p>
 
-<p>Closing image for the introducing terms section: 
-<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence terms. Deep learning is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence." />
-We only covered artificial intelligence and machine learning in this lecture. The other terms, neural networks, deep learning, and large language models (LLMs) are options for you to explore in the activity class.</p>
+<h2 id="from-linear-regression-to-neural-networks-10-ish-minutes">From linear regression to neural networks (10-ish minutes)</h2>
+<p>Visually, we can think of linear regression with one feature as:
+<img src="../images/lin_reg_1.png" alt="Schematic of linear regression with input x and output y."></p>
 
-<h2 id="limitations-biases-ethics-and-cost">Limitations, biases, ethics and cost</h2>
+<p>If we had multiple features:
+<img src="../images/lin_reg_2.png" alt="Schematic of linear regression with multiple inputs x_1, x_2 and x_3 and output y.">
+(Note: here the subscripts do not denote observations, but rather multiple inputs. Clashing with notation from earlier!)</p>
+
+<p>What if we performed linear regression twice, something like:
+<img src="../images/nn_1.png" alt="Schematic of linear regression with multiple inputs x_1, x_2 and x_3, a hidden layer with four components h_1, h_2, h_3, and h_4 and output y.">
+With the three inputs being used in a linear model to generate \(h_{1}\), then a linear model with different weights and bias to produce \(h_{2}\) and different weights and bias again to \(h_{3}\) and \(h_{4}\). Then there is another linear model to produce \(y\) from \(h_{1}\), \(h_{2}\), \(h_{3}\) and \(h_{4}\). What would we gain from this? Not a lot in most cases! Here we have used linear <em>activation functions</em> between our layers, and linear combinations of linear functions are themselves linear. But what if we choose a different function? A common non-linear function is the sigmoid function:</p>
+
+<p>Using a non-linear function, and combinations of non-linear functions, allow us to explore a richer input -&gt; output world, not restricted to linear relationships!</p>
+
+<ul>
+  <li>Neural network learns and weights and biases across multiple layers, from input to outputs and hidden layers in between, via activation function (which may differ between layers), to be able to map inputs to outputs.</li>
+  <li>The benefit of using multiple layers and different activation functions are that the neural network can learn increasingly complex functions. A disadvantage is that having many layers can be computationally expensive.</li>
+  <li>Neural networks can be tuned using <em>backpropagation</em> as well as forward passes. <a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U">See the delightful (pre-ubiquitous GenAI) video by 3Blue1Brown, for example.</a>
+</li>
+  <li>Not all neural networks use gradient descent during training, indeed, some do not use loss functions at all!</li>
+</ul>
+
+<h2 id="supervised-vs-unsupervised-learning-5-ish-minutes">Supervised vs. unsupervised learning (5-ish minutes)</h2>
+<p>Before the break we introduced linear regression in the context of machine learning. This was an example of <em>supervised</em> machine learning, where the <em>examples</em> contained <em>features</em> and <em>labels</em>. Unsupervised machine learning uses datasets <em>without</em> labels. These two kinds of machine learning serve different purposes.</p>
+<ul>
+  <li>Supervised machine learning: classification, regression tasks</li>
+  <li>Unsupervised machine learning: clutsering, association, dimensionality reduction tasks</li>
+</ul>
+
+<h2 id="from-neural-networks-to-genai-20-ish-minutes">From neural networks to GenAI (20-ish minutes)</h2>
+<ul>
+  <li>
+<em>Deep learning</em> uses multi-layered neural networks to infer <em>even more</em> complicated relationships between inputs and and outputs. Usually, they are so complex, they are referred to as a <em>black box</em>. These kinds of approaches are often used in GenAI.</li>
+  <li>
+<em>Transformers</em> are a kind of deep learning used for <em>sequential</em> data, such as text. Transformers consist of:
+    <ul>
+      <li>
+<em>Encoders</em>: takes raw data (e.g. text) and convert them into some other form, such as a vector.</li>
+      <li>
+<em>Decoders</em>: takes data in this ‘other form’ (determined by the encoder) and convers it back into output form (e.g. text).</li>
+    </ul>
+  </li>
+  <li>
+<em>Attention mechanisms</em>: in this room right now, there is a lot going on, so how do you knw what to pay attention to? Maybe it is not so relevant right now that there is an empty seat in the room, so you do not look at a specific empty seat. How can deep learning models do something similar? They <em>weigh</em> relationships between words (for example) relative to other sequences.</li>
+  <li>Transformers often use <em>self-attention</em>, weighting relations between words in the input sequence.
+<!-- - *Language models* estimate the probability of a word (for example) appearing in a sequence of words. (Probabilities aren't exclusively applied to words, they can also be applied to characters, subwords, sentences, paragraphs or longer pieces of text.) -->
+</li>
+  <li>
+<em>Large language models</em> use transformers to predict text – GenAI!</li>
+</ul>
+
+<h2 id="limitations-biases-ethics-and-cost-15-ish-minutes">Limitations, biases, ethics and cost (15-ish minutes)</h2>
+<ul>
+  <li>All of these complex models require <em>a lot</em> of resources to compute</li>
+  <li>Performing all of the relevant calculations requires a lot of energy, not only to run the calculations themselves, but also to keep the computers from overheating while running them (sometimes cooling can be water intensive)</li>
+  <li>Are we moving to a ‘token economy’, where GenAI tokens become a tradable commodity? What would the implications be for society?</li>
+  <li>Not only is there a great physical cost to running GenAI models, but they are only as ‘good’ as their input data. What is the data that feeds GenAI? Who is (and isn’t) represented in that data? What could that mean for GenAI responses?</li>
+  <li>Considering all of the above, who gets to have access to GenAI? Who doesn’t? What are the implications of this?</li>
+</ul>
+
+<h2 id="summary-5-ish-minutes">Summary (5-ish minutes)</h2>
+<p>Our intended learning objectives were:</p>
+<ul>
+  <li>Explain what artificial intelligence is</li>
+  <li>Describe the relationships and differences between artificial intelligence, machine learning, and GenAI</li>
+  <li>Identify features of machine learning algorithms</li>
+  <li>Understand the limitations, biases, ethical and environmental concerns regarding GenAI use</li>
+</ul>
+
+<p>Can we do these yet? What needs further clarifying? You can (noting some of the costs above!) create your own Copilot Notebook to probe the limits of this content!</p>
+
+<p>Closing image for the introducing terms section: 
+<img src="../images/ai_venn_diagram.png" alt="Venn diagram of artificial intelligence terms. Deep learning is a subset of neural networks, which are a subset of machine learning, which is a subset of artificial intelligence.">
+Within each of these concepts, there is so much more we have not yet covered! There will be an opportunity to explore these further in the applied class.</p>
 
 <!-- Making a start on
 Two-hour applied class content
@@ -486,7 +579,7 @@ In lectures, the terms generative artificial itnelligence, artificial intelligen
 
 
 <div class="page__footer-copyright">
-  &copy; 2026 Age Zanca, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  © 2026 Age Zanca, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
   Site last updated 2026-08-26
 </div>
 
